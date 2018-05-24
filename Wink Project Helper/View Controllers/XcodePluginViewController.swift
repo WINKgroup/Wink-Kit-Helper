@@ -35,7 +35,7 @@ class XcodePluginViewController: NSViewController {
             try templateNames.forEach { template, destination in
                 let filePath = Bundle.main.url(forResource: template, withExtension: "zip")!
                 let unzipDirectory = try Zip.quickUnzipFile(filePath) // Unzip
-                try copyFolders(folderPath: unzipDirectory.appendingPathComponent("Wink Kit").path, destination: destination.path)
+                try copyFolders(folderPath: unzipDirectory.appendingPathComponent("Wink Kit"), destination: destination)
             }
             
             dialogOK(question: "Success", text: "Templates successfully installed!")
@@ -47,20 +47,22 @@ class XcodePluginViewController: NSViewController {
     }
     
     
-    func copyFolders(folderPath: String, destination: String) throws {
+    func copyFolders(folderPath: URL, destination: URL) throws {
         try copyFiles(pathFromBundle: folderPath, destination: destination)
     }
     
-    func copyFiles(pathFromBundle: String, destination: String) throws {
+    func copyFiles(pathFromBundle: URL, destination: URL) throws {
+        var destination = destination
         let fileManager = FileManager.default
-        if !fileManager.fileExists(atPath: destination) {
-            try FileManager.default.createDirectory(atPath: destination, withIntermediateDirectories: true, attributes: nil)
+        if fileManager.fileExists(atPath: destination.path) {
+            try fileManager.removeItem(at: destination)
         }
-        let filelist = try fileManager.contentsOfDirectory(atPath: pathFromBundle)
-        try? fileManager.copyItem(atPath: pathFromBundle, toPath: destination)
+        try fileManager.createDirectory(at: destination, withIntermediateDirectories: true, attributes: nil)
+        let filelist = try fileManager.contentsOfDirectory(atPath: pathFromBundle.path)
+        try? fileManager.copyItem(at: pathFromBundle, to: destination)
         
         for filename in filelist {
-            try? fileManager.copyItem(atPath: "\(pathFromBundle)/\(filename)", toPath: "\(destination)/\(filename)")
+            try? fileManager.copyItem(at: pathFromBundle.appendingPathComponent(filename), to: destination.appendingPathComponent(filename))
         }
     }
     
