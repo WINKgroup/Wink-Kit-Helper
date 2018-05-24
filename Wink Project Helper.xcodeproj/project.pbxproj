@@ -17,7 +17,6 @@
 		1FF6F29F206E66A1001E29FF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF6F29E206E66A1001E29FF /* Utils.swift */; };
 		1FF6F2A1206E7221001E29FF /* Zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF6F2A0206E7220001E29FF /* Zip.framework */; };
 		1FF6F2A2206E7221001E29FF /* Zip.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF6F2A0206E7220001E29FF /* Zip.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1FF6F2A5206E7EC1001E29FF /* Script.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1FF6F2A4206E7EC1001E29FF /* Script.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,7 +46,6 @@
 		1FF6F29C206E55CF001E29FF /* XcodePluginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodePluginViewController.swift; sourceTree = "<group>"; };
 		1FF6F29E206E66A1001E29FF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		1FF6F2A0206E7220001E29FF /* Zip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Zip.framework; path = Carthage/Build/Mac/Zip.framework; sourceTree = "<group>"; };
-		1FF6F2A4206E7EC1001E29FF /* Script.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Script.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +106,6 @@
 			children = (
 				1FDE58521FE137D0003CCBE1 /* CustomFontPlistViewController.swift */,
 				1FF6F29C206E55CF001E29FF /* XcodePluginViewController.swift */,
-				1FF6F2A4206E7EC1001E29FF /* Script.sh */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -182,7 +179,6 @@
 				1FDE58551FE137D0003CCBE1 /* Assets.xcassets in Resources */,
 				1FDE58581FE137D0003CCBE1 /* Main.storyboard in Resources */,
 				1F9512A420B6E01600A25112 /* Project.zip in Resources */,
-				1FF6F2A5206E7EC1001E29FF /* Script.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

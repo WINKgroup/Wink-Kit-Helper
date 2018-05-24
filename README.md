@@ -14,7 +14,7 @@ MacOS app that contains tools to help Wink iOS projects.
 
 ## Authors
 
-**Rico Crescenzio** - [Linkedin](https://www.linkedin.com/in/quirico-crescenzio-810263b9/)
+**Rico Crescenzio**
 
 ## License
 

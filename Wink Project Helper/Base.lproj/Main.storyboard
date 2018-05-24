@@ -122,20 +122,20 @@
             <objects>
                 <viewController title="Font plist creator" id="XfG-lQ-9wD" customClass="CustomFontPlistViewController" customModule="Wink_Project_Helper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="530" height="217"/>
+                        <rect key="frame" x="0.0" y="0.0" width="530" height="268"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFF-sZ-91X">
-                                <rect key="frame" x="20" y="20" width="490" height="140"/>
+                                <rect key="frame" x="20" y="20" width="490" height="133"/>
                                 <clipView key="contentView" id="MhK-8k-PCO">
-                                    <rect key="frame" x="1" y="1" width="488" height="138"/>
+                                    <rect key="frame" x="1" y="1" width="488" height="131"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView editable="NO" importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="F1K-0o-HK4">
-                                            <rect key="frame" x="0.0" y="0.0" width="488" height="138"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="488" height="131"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <size key="minSize" width="488" height="138"/>
+                                            <size key="minSize" width="488" height="131"/>
                                             <size key="maxSize" width="490" height="10000000"/>
                                             <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </textView>
@@ -150,12 +150,12 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="8lt-PQ-x9O">
-                                    <rect key="frame" x="473" y="1" width="16" height="138"/>
+                                    <rect key="frame" x="473" y="1" width="16" height="131"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rGY-ts-ibr">
-                                <rect key="frame" x="14" y="173" width="135" height="32"/>
+                                <rect key="frame" x="14" y="166" width="135" height="32"/>
                                 <buttonCell key="cell" type="push" title="Select font files" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="CBm-WH-WGy">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -164,15 +164,26 @@
                                     <action selector="selectFontFilesDidTap:" target="XfG-lQ-9wD" id="RNE-1B-s8M"/>
                                 </connections>
                             </button>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="WYj-SB-KuA">
+                                <rect key="frame" x="18" y="214" width="494" height="34"/>
+                                <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" title="Select all font files you want to include in a xcode project, copy and paste the generated xml in your Info.plist file" id="JEf-7V-wOH">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="WYj-SB-KuA" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="1Mx-p2-OC6"/>
+                            <constraint firstItem="rGY-ts-ibr" firstAttribute="top" secondItem="WYj-SB-KuA" secondAttribute="bottom" constant="20" id="1ya-8T-I5X"/>
+                            <constraint firstItem="WYj-SB-KuA" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="Anc-lk-cLN"/>
                             <constraint firstAttribute="bottom" secondItem="tFF-sZ-91X" secondAttribute="bottom" constant="20" id="C72-Zb-io1"/>
                             <constraint firstAttribute="trailing" secondItem="tFF-sZ-91X" secondAttribute="trailing" constant="20" id="G0q-TC-A6A"/>
                             <constraint firstItem="tFF-sZ-91X" firstAttribute="top" secondItem="rGY-ts-ibr" secondAttribute="bottom" constant="20" id="U9I-ky-2Pn"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rGY-ts-ibr" secondAttribute="trailing" constant="20" id="b3a-PF-xu3"/>
                             <constraint firstItem="tFF-sZ-91X" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="dk4-lM-IIa"/>
                             <constraint firstItem="rGY-ts-ibr" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="jSs-FC-Rvf"/>
-                            <constraint firstItem="rGY-ts-ibr" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="16" id="nCh-gu-jFZ"/>
+                            <constraint firstAttribute="trailing" secondItem="WYj-SB-KuA" secondAttribute="trailing" constant="20" id="wqC-Fs-Up2"/>
                         </constraints>
                     </view>
                     <connections>
@@ -181,7 +192,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="376" y="1250"/>
+            <point key="canvasLocation" x="393" y="1419"/>
         </scene>
         <!--Tab View Controller-->
         <scene sceneID="IzW-Vy-SGi">
@@ -215,19 +226,22 @@
             <objects>
                 <viewController title="Xcode plugin" storyboardIdentifier="XcodePluginViewController" id="a5T-0u-p2W" customClass="XcodePluginViewController" customModule="Wink_Project_Helper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="5Kn-cv-eCB">
-                        <rect key="frame" x="0.0" y="0.0" width="582" height="218"/>
+                        <rect key="frame" x="0.0" y="0.0" width="582" height="294"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="MIN-PA-A46">
-                                <rect key="frame" x="18" y="164" width="546" height="34"/>
-                                <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" title="Install into Xcode all WinkKit useful plugins, like Project Template, File Template, shortcuts" id="do0-o0-WSs">
+                                <rect key="frame" x="18" y="206" width="546" height="68"/>
+                                <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" id="do0-o0-WSs">
                                     <font key="font" metaFont="system"/>
+                                    <string key="title">Install into Xcode all WinkKit useful plugins, like Project Template, File Template, shortcuts.
+
+Templates will be installed under "~/Library/Developer/Xcode/Templates"</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Xfs-9q-5kT">
-                                <rect key="frame" x="18" y="17" width="124" height="35"/>
+                                <rect key="frame" x="229" y="17" width="124" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="aNV-Eh-Xsl"/>
                                 </constraints>
@@ -239,29 +253,29 @@
                                     <action selector="installButtonDidClick:" target="a5T-0u-p2W" id="TGh-db-oGs"/>
                                 </connections>
                             </button>
-                            <progressIndicator hidden="YES" wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="aXf-cl-Dp4">
-                                <rect key="frame" x="148" y="27" width="16" height="16"/>
-                            </progressIndicator>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EIf-KJ-I81">
+                                <rect key="frame" x="20" y="122" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="3p4-yW-ulb"/>
+                            </imageView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="MIN-PA-A46" firstAttribute="leading" secondItem="5Kn-cv-eCB" secondAttribute="leading" constant="20" id="1pt-hs-4Xr"/>
-                            <constraint firstItem="aXf-cl-Dp4" firstAttribute="centerY" secondItem="Xfs-9q-5kT" secondAttribute="centerY" id="6PJ-8v-KiA"/>
-                            <constraint firstItem="Xfs-9q-5kT" firstAttribute="leading" secondItem="5Kn-cv-eCB" secondAttribute="leading" constant="20" id="G5q-fb-YZd"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Xfs-9q-5kT" secondAttribute="trailing" constant="20" id="Clq-ag-Ubc"/>
+                            <constraint firstItem="Xfs-9q-5kT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5Kn-cv-eCB" secondAttribute="leading" constant="20" id="G5q-fb-YZd"/>
                             <constraint firstAttribute="bottom" secondItem="Xfs-9q-5kT" secondAttribute="bottom" constant="20" id="YHW-ev-vbU"/>
-                            <constraint firstItem="aXf-cl-Dp4" firstAttribute="leading" secondItem="Xfs-9q-5kT" secondAttribute="trailing" constant="8" id="h7N-zf-2ra"/>
                             <constraint firstItem="MIN-PA-A46" firstAttribute="top" secondItem="5Kn-cv-eCB" secondAttribute="top" constant="20" id="hPz-tj-nr3"/>
                             <constraint firstAttribute="trailing" secondItem="MIN-PA-A46" secondAttribute="trailing" constant="20" id="iY8-ao-qZb"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aXf-cl-Dp4" secondAttribute="trailing" constant="20" id="oQj-7J-E8A"/>
+                            <constraint firstItem="Xfs-9q-5kT" firstAttribute="centerX" secondItem="5Kn-cv-eCB" secondAttribute="centerX" id="vNh-34-sh6"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="installButton" destination="Xfs-9q-5kT" id="l6h-Of-Vbl"/>
-                        <outlet property="progressIndicator" destination="aXf-cl-Dp4" id="mDj-ik-rz0"/>
                     </connections>
                 </viewController>
                 <customObject id="1BZ-xe-HZc" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-275" y="1250"/>
+            <point key="canvasLocation" x="-275" y="1432"/>
         </scene>
     </scenes>
 </document>
