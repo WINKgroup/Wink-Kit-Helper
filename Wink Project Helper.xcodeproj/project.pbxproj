@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F9512A420B6E01600A25112 /* Project.zip in Resources */ = {isa = PBXBuildFile; fileRef = 1F9512A220B6E01500A25112 /* Project.zip */; };
+		1F9512A520B6E01600A25112 /* Files.zip in Resources */ = {isa = PBXBuildFile; fileRef = 1F9512A320B6E01500A25112 /* Files.zip */; };
+		1FDE58511FE137D0003CCBE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDE58501FE137D0003CCBE1 /* AppDelegate.swift */; };
+		1FDE58531FE137D0003CCBE1 /* CustomFontPlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDE58521FE137D0003CCBE1 /* CustomFontPlistViewController.swift */; };
+		1FDE58551FE137D0003CCBE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FDE58541FE137D0003CCBE1 /* Assets.xcassets */; };
+		1FDE58581FE137D0003CCBE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FDE58561FE137D0003CCBE1 /* Main.storyboard */; };
+		1FF6F29D206E55CF001E29FF /* XcodePluginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF6F29C206E55CF001E29FF /* XcodePluginViewController.swift */; };
+		1FF6F29F206E66A1001E29FF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF6F29E206E66A1001E29FF /* Utils.swift */; };
+		1FF6F2A1206E7221001E29FF /* Zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF6F2A0206E7220001E29FF /* Zip.framework */; };
+		1FF6F2A2206E7221001E29FF /* Zip.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF6F2A0206E7220001E29FF /* Zip.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1FF6F2A5206E7EC1001E29FF /* Script.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1FF6F2A4206E7EC1001E29FF /* Script.sh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1FF6F2A3206E7221001E29FF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1FF6F2A2206E7221001E29FF /* Zip.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1F9512A220B6E01500A25112 /* Project.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = Project.zip; sourceTree = "<group>"; };
+		1F9512A320B6E01500A25112 /* Files.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = Files.zip; sourceTree = "<group>"; };
+		1FDE584D1FE137D0003CCBE1 /* Wink Project Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wink Project Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FDE58501FE137D0003CCBE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1FDE58521FE137D0003CCBE1 /* CustomFontPlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontPlistViewController.swift; sourceTree = "<group>"; };
+		1FDE58541FE137D0003CCBE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FDE58571FE137D0003CCBE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1FDE58591FE137D0003CCBE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FDE585A1FE137D0003CCBE1 /* Wink Project Helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wink Project Helper.entitlements"; sourceTree = "<group>"; };
+		1FF6F29C206E55CF001E29FF /* XcodePluginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodePluginViewController.swift; sourceTree = "<group>"; };
+		1FF6F29E206E66A1001E29FF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		1FF6F2A0206E7220001E29FF /* Zip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Zip.framework; path = Carthage/Build/Mac/Zip.framework; sourceTree = "<group>"; };
+		1FF6F2A4206E7EC1001E29FF /* Script.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Script.sh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FDE584A1FE137D0003CCBE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FF6F2A1206E7221001E29FF /* Zip.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FA13328206E4D0000EC122C /* Wink Kit Xcode Templates */ = {
+			isa = PBXGroup;
+			children = (
+				1F9512A320B6E01500A25112 /* Files.zip */,
+				1F9512A220B6E01500A25112 /* Project.zip */,
+			);
+			path = "Wink Kit Xcode Templates";
+			sourceTree = "<group>";
+		};
+		1FDE58441FE137D0003CCBE1 = {
+			isa = PBXGroup;
+			children = (
+				1FF6F2A0206E7220001E29FF /* Zip.framework */,
+				1FDE584F1FE137D0003CCBE1 /* Wink Project Helper */,
+				1FDE584E1FE137D0003CCBE1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FDE584E1FE137D0003CCBE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FDE584D1FE137D0003CCBE1 /* Wink Project Helper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FDE584F1FE137D0003CCBE1 /* Wink Project Helper */ = {
+			isa = PBXGroup;
+			children = (
+				1FF6F29B206E5590001E29FF /* View Controllers */,
+				1FA13328206E4D0000EC122C /* Wink Kit Xcode Templates */,
+				1FDE58501FE137D0003CCBE1 /* AppDelegate.swift */,
+				1FDE58541FE137D0003CCBE1 /* Assets.xcassets */,
+				1FDE58561FE137D0003CCBE1 /* Main.storyboard */,
+				1FDE58591FE137D0003CCBE1 /* Info.plist */,
+				1FDE585A1FE137D0003CCBE1 /* Wink Project Helper.entitlements */,
+				1FF6F29E206E66A1001E29FF /* Utils.swift */,
+			);
+			path = "Wink Project Helper";
+			sourceTree = "<group>";
+		};
+		1FF6F29B206E5590001E29FF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1FDE58521FE137D0003CCBE1 /* CustomFontPlistViewController.swift */,
+				1FF6F29C206E55CF001E29FF /* XcodePluginViewController.swift */,
+				1FF6F2A4206E7EC1001E29FF /* Script.sh */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FDE584C1FE137D0003CCBE1 /* Wink Project Helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FDE585D1FE137D0003CCBE1 /* Build configuration list for PBXNativeTarget "Wink Project Helper" */;
+			buildPhases = (
+				1FDE58491FE137D0003CCBE1 /* Sources */,
+				1FDE584A1FE137D0003CCBE1 /* Frameworks */,
+				1FDE584B1FE137D0003CCBE1 /* Resources */,
+				1FF6F2A3206E7221001E29FF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wink Project Helper";
+			productName = CustomFontPlistCreator;
+			productReference = 1FDE584D1FE137D0003CCBE1 /* Wink Project Helper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FDE58451FE137D0003CCBE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "wink srl";
+				TargetAttributes = {
+					1FDE584C1FE137D0003CCBE1 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 1FDE58481FE137D0003CCBE1 /* Build configuration list for PBXProject "Wink Project Helper" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FDE58441FE137D0003CCBE1;
+			productRefGroup = 1FDE584E1FE137D0003CCBE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FDE584C1FE137D0003CCBE1 /* Wink Project Helper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FDE584B1FE137D0003CCBE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9512A520B6E01600A25112 /* Files.zip in Resources */,
+				1FDE58551FE137D0003CCBE1 /* Assets.xcassets in Resources */,
+				1FDE58581FE137D0003CCBE1 /* Main.storyboard in Resources */,
+				1F9512A420B6E01600A25112 /* Project.zip in Resources */,
+				1FF6F2A5206E7EC1001E29FF /* Script.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FDE58491FE137D0003CCBE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FF6F29D206E55CF001E29FF /* XcodePluginViewController.swift in Sources */,
+				1FDE58531FE137D0003CCBE1 /* CustomFontPlistViewController.swift in Sources */,
+				1FDE58511FE137D0003CCBE1 /* AppDelegate.swift in Sources */,
+				1FF6F29F206E66A1001E29FF /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1FDE58561FE137D0003CCBE1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FDE58571FE137D0003CCBE1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FDE585B1FE137D0003CCBE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1FDE585C1FE137D0003CCBE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		1FDE585E1FE137D0003CCBE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = W532XC988Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Wink Project Helper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = by.wink.app.WinkProjectHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		1FDE585F1FE137D0003CCBE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = W532XC988Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Wink Project Helper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = by.wink.app.WinkProjectHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FDE58481FE137D0003CCBE1 /* Build configuration list for PBXProject "Wink Project Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FDE585B1FE137D0003CCBE1 /* Debug */,
+				1FDE585C1FE137D0003CCBE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FDE585D1FE137D0003CCBE1 /* Build configuration list for PBXNativeTarget "Wink Project Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FDE585E1FE137D0003CCBE1 /* Debug */,
+				1FDE585F1FE137D0003CCBE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FDE58451FE137D0003CCBE1 /* Project object */;
+}
